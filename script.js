@@ -12,10 +12,16 @@ function boxPixel() {
 }
 boxPixel();
 
-function addClasseSelected() {
-  let vetor = document.querySelectorAll('.color');
-  
-  for (let i = 0; i < vetor.length; i += 1) {
-    vetor[i].className == 'selected'
-  }
-}
+// function removeClassSelected(event) {
+//   if (event.target.classList.contains('selected')) {
+//     event.target.classList.remove('selected');
+//     console.log('clickou');
+//   }
+// }
+
+// function addClassSelected() {
+//   for (let i = 0; i < vetorCores.length; i += 1) {
+//     vetorCores[i].addEventListener('click', removeClassSelected(event));
+//   }
+// }
+// addClassSelected();
