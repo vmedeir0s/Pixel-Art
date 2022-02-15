@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: green;
+  height: 100px;
+}
+#title {
+  color: white;
+  padding: 30px 0px 0px 20px;
+}
+#color-palette {
+  margin-top: 20px;
+  margin-left: 60px;
+ 
+}
+
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+}
+
+.color.black {
+  background-color: black;
+}
+.color.green {
+  background-color: green;
+}
+.color.yellow {
+  background-color: yellow;
+}
+.color.blue {
+  background-color: blue;
+}
+
+
+
+
+footer {
+  margin-top: 420px;
+  height: 50px;
+  background-color: green;
+}
+#footer-p {
+  color: white;
+  font-style: italic;
+  text-align: center;
+  padding-top: 5px;
+}
