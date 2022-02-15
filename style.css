@@ -23,16 +23,16 @@ header {
   height: 60px;
 }
 
-#black {
+#box1 {
   background-color: black;
 }
-#green {
+#box2 {
   background-color: green;
 }
-#yellow {
+#box3 {
   background-color: yellow;
 }
-#blue {
+#box4 {
   background-color: blue;
 }
 
