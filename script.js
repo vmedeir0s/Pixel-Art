@@ -34,9 +34,10 @@ function addBackgroundOnPixel() {
 addBackgroundOnPixel();
 
 function clearBoard() {
-  let positionPixels = document.querySelectorAll('.pixel');
+  
   let positionButton = document.querySelector('#clear-board');
   positionButton.addEventListener('click',function(){
+    let positionPixels = document.querySelectorAll('.pixel');
     for (let i = 0; i < positionPixels.length; i += 1){
       if(positionPixels[i].hasAttribute('style')){
         positionPixels[i].removeAttribute('style');
@@ -45,6 +46,29 @@ function clearBoard() {
   })
 }
 clearBoard();
+
+
+function verificaInputValue(){
+  let posBotao = document.querySelector("#generate-board");
+  posBotao.addEventListener('click',function(){
+    let posInput = document.querySelector("#board-size").value
+    if(posInput === '' || posInput === 0 || posInput === null || posInput === undefined){
+      window.alert('Board Inválido!');
+    }
+    else {
+      if(posInput>50){
+        posInput = 50;
+      }
+      if(posInput<5){
+        posInput = 5;
+      }
+      document.querySelector("#pixel-board").innerHTML = '';
+      boxPixel(posInput);
+    }
+  })
+}
+verificaInputValue();
+
 
 function geraCor() {
   const cor = Math.floor(Math.random() * 16777215).toString(16);
