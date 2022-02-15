@@ -23,10 +23,28 @@ function addClassSelect() {
 addClassSelect();
 
 function addBackgroundOnPixel() {
-  let positionSelect = document.querySelector('.selected');
-  
+  let positionBoard = document.querySelector('#pixel-board');
+  positionBoard.addEventListener('click', function(event) {
+    let positionSelect = document.querySelector('.selected');
+    let objetoCss = window.getComputedStyle(positionSelect);
+    let background = objetoCss.getPropertyValue('background-color')
+    event.target.style.backgroundColor = background;
+  });
 }
+addBackgroundOnPixel();
 
+function clearBoard() {
+  let positionPixels = document.querySelectorAll('.pixel');
+  let positionButton = document.querySelector('#clear-board');
+  positionButton.addEventListener('click',function(){
+    for (let i = 0; i < positionPixels.length; i += 1){
+      if(positionPixels[i].hasAttribute('style')){
+        positionPixels[i].removeAttribute('style');
+      }
+    }
+  })
+}
+clearBoard();
 
 function geraCor() {
   const cor = Math.floor(Math.random() * 16777215).toString(16);
