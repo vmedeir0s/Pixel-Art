@@ -11,3 +11,11 @@ function boxPixel() {
   }
 }
 boxPixel();
+
+function addClasseSelected() {
+  let vetor = document.querySelectorAll('.color');
+  
+  for (let i = 0; i < vetor.length; i += 1) {
+    vetor[i].className == 'selected'
+  }
+}
