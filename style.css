@@ -23,20 +23,31 @@ header {
   height: 60px;
 }
 
-.color.black {
+#black {
   background-color: black;
 }
-.color.green {
+#green {
   background-color: green;
 }
-.color.yellow {
+#yellow {
   background-color: yellow;
 }
-.color.blue {
+#blue {
   background-color: blue;
 }
 
+#pixel-board {
+  margin-top: 20px;
+  margin-left: 60px;
+}
 
+.pixel {
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: white;
+}
 
 
 footer {
