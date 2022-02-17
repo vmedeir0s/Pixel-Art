@@ -21,7 +21,9 @@ header h2 {
 
 main {
   background-color: rgb(200, 204, 160);
-  height: 80vh;
+  min-height: 82vh;
+  max-width: 100%;
+  height: auto;
   text-align: center;
 }
 
@@ -90,11 +92,10 @@ main {
 }
 
 footer {
-  min-height: 5vh;
-  max-height: 5vh;
+  min-height: 6vh;
+  max-height: 6vh;
   background-color: green;
   width: 100%;
-  position: absolute;
   bottom: 0;
   text-align: center;
 }
